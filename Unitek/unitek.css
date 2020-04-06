@@ -1,0 +1,33 @@
+.unitek-navbar  {
+    border-radius: 0;
+    background-color: #f00808;
+    margin-bottom: 0;
+}
+
+.unitek-navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.unitek-navbar .navbar-nav > li > a {
+    color: #fff;
+    font-weight: bold;
+    display: none;
+}
+
+.banner {
+    height: 50vh;
+    background-color: aquamarine;
+}
+
+.content {
+    background-color: blueviolet;
+    height: 100vh;
+}
+
+footer {
+    background-color: #f00808;
+    padding: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
