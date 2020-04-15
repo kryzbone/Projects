@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/bitsika.css">
 </head>
 <body>
+    <input type="checkbox" id="check">
+    <div class="page">
+    <label for="check"><span>Light</span> <span>Dark</span></label>    
     <header>
         <div class="brand">
             <div class="logo ">
@@ -124,9 +127,26 @@
             </div>
         </div>
     </footer>
-
+    </div>
+    
+        
+    
     
  <script src="./js/jquery-3.4.1.min.js"></script>
- <script src="./js/bootstrap.js"></script>   
+ <script src="./js/bootstrap.js"></script> 
+ <script>
+    const themeSwitch = document.querySelector('#check');
+themeSwitch.checked = localStorage.getItem('switchedTheme') === 'true';
+
+themeSwitch.addEventListener('change', function (e) {
+  if(e.currentTarget.checked === true) {
+    // Add item to localstorage
+    localStorage.setItem('switchedTheme', 'true');
+  } else {
+    // Remove item if theme is switched back to normal
+    localStorage.removeItem('switchedTheme');
+  }
+});
+ </script>  
 </body>
 </html>
